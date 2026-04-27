@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width, initial-scale=1.0">
+  <title>Bebidas</title>
+  <link rel="stylesheet" href="style.bebidas.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&display=swap"
+    rel="stylesheet">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Satisfy&display=swap" rel="stylesheet">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
+    rel="stylesheet">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playwrite+NO:wght@100..400&display=swap" rel="stylesheet">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+
+  <link rel="icon" href="icon.png" type="image/png">
+</head>
+
+<body>
+  <div class="hamburger" id="btn" onclick="toggleMenu()">
+    ☰
+  </div>
+  <br>
+  <nav id="menu">
+    <a href="index.html">Início</a>
+    <a href="cardapio.salgado.html">Salgados</a>
+    <a href="cardápio.doce.html">Doces</a>
+  </nav>
+
+  <div class="titulo">
+    <h2>Refri:</h2>
+  </div>
+  <p class="descricao">Clique na foto de qual você deseja comprar!</p>
+  <form action="https://api.staticforms.dev/submit" method="POST">
+    <div class="container">
+      <label class="goloseimas">
+        <input type="checkbox" name="pedido[]" value="Pepsi - R$2,00" data-preco="2">
+        <img src="refri.jpeg" alt="Refri" class="foto">
+        <p class="p1">Refri</p>
+        <p class="p1">Pepsi</p>
+        <p class="p1">200ML</p>
+        <h4 class="precos">R$ 2,00</h4>
+      </label>
+
+       <label class="goloseimas">
+        <input type="checkbox" name="pedido[]" value="coca - R$2.50" data-preco="2.50">
+        <img src="Coca-cola.jpeg" alt="coca" class="foto">
+        <p class="p1">Refri</p>
+         <p class="p1">Coca-cola</p>
+        <p class="p1">200ML</p>
+        <h4 class="precos">R$ 2,50</h4>
+      
+      </label>
+    </div>
+      <br>
+      <Div class="area-pix">
+        <p class="finalizar">Depois de selecionar o seu pedido, calcule o totalda compra:</p>
+        <div class="eita">
+          <h3 class="total">Total: R$ <span id="total">0.00</span></h3>
+          <div class="foto-btn">
+            <button type="button" onclick="calcularTotal()" class="lorem"><img src="finalizar.png" alt="calcular"
+                class="btn-calcular"></button>
+          </div>
+        </div>
+        <br>
+        <p class="pix">Pix:<b>51984231376</b> -Nubank<br>
+          (Lis Helena Dutra de Oliveira)
+        </p>
+        <p class="finalizar">Não esqueça de mandar o comprovante para o numero do whatsappque está no canto da tela!<br>
+          obrigada pela compra! <br> (Mas ainda não acabou👇🏼)</p>
+        <br>
+      </Div>
+      <p class="dados">Depois que você escolheu, preencha os dados a baixo:</p>
+
+      <fieldset>
+        <legend class="legenda">Nome:</legend>
+        <textarea name="Nome" placeholder="Nome..." required></textarea>
+      </fieldset>
+
+      <fieldset>
+        <legend class="legenda">Turma</legend>
+        <textarea name="turma" placeholder="Turma..." required></textarea>
+      </fieldset>
+      <br>
+      <div class="foto-btn">
+      <button type="submit" class="botao"><input type="hidden" name="apiKey" value="sf_ed4ae46a6e6489f8e3179b18" />
+        <img src="finalizar.png" alt="finalizar" class="btn-calcular">
+      </button>
+    </div>
+  </form>
+  <br>
+  <!-- ------------------------------------------------------------------------------------------------------------------- -->
+  <a href="https://wa.me/555196890929?" target="_blank" class="whatsapp-float">
+    <img src="whatsapp.png" alt="WhatsApp" class="whatsapp-icon">
+  </a>
+
+
+  <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+
+  <div vw class="enabled">
+    <div vw-access-button class="active"></div>
+    <div vw-plugin-wrapper>
+      <div class="vw-plugin-top-wrapper"></div>
+    </div>
+  </div>
+
+  <script>
+    new window.VLibras.Widget('https://vlibras.gov.br/app');
+  </script>
+
+  <footer class="footer">
+    <div class="footer-content">
+
+      <img src="logo.302.png" alt="Foto da turma 302" class="foto-turma">
+      <p class="frase">"não é só um ano, é a 302"</p>
+      <a href="https://www.instagram.com/302formandos_26?igsh=aXk2bDl5Nzg0YWti" target="_blank" class="instagram">
+        @302formandos_26
+      </a>
+      <p class="creditos">
+        by:
+        <a href="https://www.instagram.com/gabrieletei14?igsh=anU3ajZ2cmVzZDRn" target="_blank">
+          @gabrieletei14
+        </a>
+      </p>
+    </div>
+  </footer>
+  <script src="cardapio.js"></script>
+
+</body>
+
+</html>
