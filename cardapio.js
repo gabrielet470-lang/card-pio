@@ -1,4 +1,6 @@
-  new window.VLibras.Widget('https://vlibras.gov.br/app');
+window.addEventListener('load', function() {
+    new window.VLibras.Widget('https://vlibras.gov.br/app');
+  });
 
 //   function toggleMenu() {
 //   document.getElementById("menu").classList.toggle("active");
